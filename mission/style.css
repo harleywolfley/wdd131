@@ -1,0 +1,58 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora:ital,wght@0,600;1,600&display=swap');
+/* Cormorant Garamond for h1, h4, . Lora for p, li, . */
+
+body {
+    margin: 0;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 750px;
+    border: solid 2px #eaeaea;
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    padding: 50px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Cormorant Garamond, serif;
+}
+
+/* BRIGHAM YOUNG UNIVERSITY-IDAHO subheading*/
+h4 {
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+    color: #5b8fdc;
+    font-family: Cormorant Garamond, serif;
+    /* seperator line */
+    border-bottom: 2px solid #eaeaea;
+}
+
+p {
+    font-family: Lora, serif;
+}
+
+li {
+    font-family: Lora, serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p {
+    font-style: italic;
+}
