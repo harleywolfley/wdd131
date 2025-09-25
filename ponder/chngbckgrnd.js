@@ -20,5 +20,4 @@ function changeTheme() {
         document.body.style.backgroundImage = "none";
         pageContent.style.fontFamily = "Georgia, serif";
     }
-}
-          
+}       
