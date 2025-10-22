@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --gold: #EFC69B;
+    --red: #AF1B3F;
+    --dark: #473144;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    border-top: var(--gold) 3px solid;
+    border-bottom: var(--gold) 3px solid;
+}
+
+h1, h2 {
+    font-family: "lora", impact, serif;
+    color: var(--red);
+}
+
+nav {
+    display: grid;
+    justify-content: end;
+    justify-items: end;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+p {
+    font-family: helvetica, arial, sans-serif;
+}
+
+li {
+    color: var(--red);
+    font-family: helvetica, arial, sans-serif;
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--red);
+}

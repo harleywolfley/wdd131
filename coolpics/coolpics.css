@@ -86,7 +86,7 @@ h3 {
     padding: 10px;
 }
 
-.menu-btn {
+.menu-button {
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -104,6 +104,23 @@ h3 {
     display: none;
 }
 
+dialog {
+    width: 90%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    margin: 20vh auto;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 20vh;
+}
+
+dialog img {
+    max-height: 100%;
+    z-index: 10;
+}
+
 @media screen and (min-width: 700px) {
 
 .gallery {
@@ -117,19 +134,24 @@ h3 {
     }
     nav a {
         display: inline;
+        width: 100%;
     }
     nav {
-        text-align: right;
+        text-align: center;
     }
 
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
 
 .gallery {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu-button {
+    display: none;
 }
 
 }
