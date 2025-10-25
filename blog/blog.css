@@ -13,6 +13,7 @@ body {
 header {
     border-top: var(--gold) 3px solid;
     border-bottom: var(--gold) 3px solid;
+    margin-bottom: 20px;
 }
 
 h1, h2 {
@@ -24,20 +25,26 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin-top: 0;
+}
+
 nav {
     display: grid;
     justify-content: end;
     justify-items: end;
+    margin-top: -30px;
 
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 30% 1fr;
 }
 
 p {
     font-family: helvetica, arial, sans-serif;
+    font-size: .9em;
 }
 
 ul {
@@ -51,8 +58,33 @@ li {
     padding: 0 20px;
 }
 
+div {
+    margin-bottom: 30px;
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+}
+
+section {
+    height: 100%;
+    border: 3px solid var(--gold);
+    margin: 0 15px;
+    float: right;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 25%;
+}
+
 a:link {
     text-decoration: none;
+    color: var(--red);
+}
+
+a:visited {
     color: var(--red);
 }
 
@@ -66,4 +98,16 @@ a:link {
 }
 .skiptocontent a:focus {
 	top: 20px;
+}
+
+.left {
+    text-align: right;
+    padding: 0 15px;
+    border-right: solid 2px var(--gold);
+    margin-right: 15px;
+}
+
+.date {
+    font-size: 1em;
+    margin-top: 0;
 }
