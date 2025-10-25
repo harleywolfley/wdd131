@@ -55,3 +55,15 @@ a:link {
     text-decoration: none;
     color: var(--red);
 }
+
+.skiptocontent a {
+	position: absolute;
+	top: -40px;
+	float: left;
+	background-color: var(--dark);
+    color: var(--gold);
+    padding: 10px;
+}
+.skiptocontent a:focus {
+	top: 20px;
+}
