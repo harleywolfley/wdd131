@@ -1,0 +1,52 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+      <section class="errors"></section>
+      <form id="checkoutForm" action="completed.html" method="get">
+        <p>
+            <label for="name">Full Name:</label>
+            <input id="name" name="name" type="text" placeholder="Enter your full name" value="Harley Wolfley" required/>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+            <label for="address">Address: </label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+        </p>
+        <p>
+            <label for="payment">Payment</label>
+            <select id="payment" name="payment">
+                <option value="choose" placeholder="Choose One"></option>
+                <option value="credit">Card</option>
+                <option value="paypal">Paypal</option>
+
+            </select>
+        </p>
+        <p class="hide" id="creditCardInfo">
+            <label for="card">Credit Card Numbers:</label>
+            <input id="card" name="card" type="text" placeholder="Enter your CC number" pattern="[0-9]{16}" required/>
+        </p>
+        <p class="hide" id="paypalUserContainer">
+            <label for="paypalName">Paypal Username</label>
+            <input id="paypalname" name="paypalname" placeholder="Enter your username" required/>
+        </p>
+        <button type="submit">Submit</button>
+        <button type="button">Cancel</button>
+      </form>
+    </main>
+  </body>
+</html>
+
+<!--"for" connects label to input "id"-->
