@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="credit.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Form</title>
+</head>
+<body>
+    <main>
+        <form>
+            <section class="card-panel">
+                <div class="card-header">
+                    <span class="total">TOTAL: <strong>$199</strong></span>
+                    <div class="chip" aria-hidden="true"></div>
+                </div>
+
+                <div class="field">
+                    <label for="cardnumber">CARD NUMBER</label>
+                    <input id="cardnumber" name="cardnumber" type="text" placeholder="1234 5678 9101 1020" pattern="[0-9 ]{16,19}" inputmode="numeric" required/>
+                </div>
+
+                <div class="row">
+                    <div class="field half">
+                        <label for="cardholder">CARD HOLDER</label>
+                        <input id="cardholder" name="cardholder" type="text" placeholder="John Doe" required/>
+                    </div>
+
+                    <div class="field third">
+                        <label>EXPIRATION</label>
+                        <div class="expiry">
+                            <input id="mm" name="exp-month" type="text" maxlength="2" placeholder="MM" required>
+                            <input id="yy" name="exp-year" type="text" maxlength="2" placeholder="YY" required>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cvv-panel">
+                <div class="field small">
+                    <label for="cvv">CVC/CVV</label>
+                    <input id="cvv" name="cvv" type="text" maxlength="4" placeholder="XXX" inputmode="numeric" required>
+                </div>
+                <div class="submit-wrap">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
