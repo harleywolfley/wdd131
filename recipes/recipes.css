@@ -26,11 +26,11 @@ form {
 }
 
 input {
-    width: 85%;
+    width: 96%;
 }
 
 button {
-    width: 13%;
+    width: 3%;
 }
 
 .card {
@@ -116,6 +116,10 @@ a:visited {
     color: rgb(0, 149, 255);
 }
 
+button img {
+    width: 250%;
+}
+
 @media screen and (min-width: 500px) {
     section {
         display: flex;
@@ -124,11 +128,6 @@ a:visited {
     section img {
         margin: 2%;
         width: 45%;
-    }
-
-    .side {
-        margin: 0;
-        padding: 0;
     }
 
     .tags ul {

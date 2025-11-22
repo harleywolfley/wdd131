@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta author="Harley Wolfley">
-    <meta description="Recipe Book">
+    <meta name="author" content="Harley Wolfley">
+    <meta name="description" content="Recipe Book">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -17,11 +17,11 @@
     <main>
         <form method="get">
             <input type="search" name="search-recipe" placeholder="Find a Recipe..." aria-label="search">
-            <button type="submit"><img href="images/search.svg"></button>
+            <button type="submit"><img src="images/search.svg"></button>
         </form>
         <section class="card">
             <img src="images/chicken-curry.webp">
-            <div claa="side">
+            <div class="right">
             <div class="tags">
                 <ul>
                     <li>Indian</li>
@@ -30,9 +30,20 @@
                 </ul>
             </div>
             <h3 class="name">Chicken Curry</h3>
-            <div class="stars">5</div>
+            <span
+				class="stars rating"
+				role="img"
+				aria-label="Rating: 3 out of 5 stars"
+			>
+				<span aria-hidden="true" class="icon-star">⭐</span>
+				<span aria-hidden="true" class="icon-star">⭐</span>
+				<span aria-hidden="true" class="icon-star">⭐</span>
+				<span aria-hidden="true" class="icon-star">⭐</span>
+				<span aria-hidden="true" class="icon-star-empty">☆</span>
+			</span>
             <p class="description hide">Quick and easy Chicken curry recipe made with easy to find ingredients.</p>
             </div>
+        </div>
         </section>
         <div class="social">
 	        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
