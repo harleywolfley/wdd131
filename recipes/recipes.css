@@ -26,11 +26,15 @@ form {
 }
 
 input {
-    width: 96%;
+    width: 94%;
 }
 
 button {
     width: 4%;
+}
+
+button img {
+    width: 10px;
 }
 
 .card {
@@ -114,10 +118,6 @@ a:active {
 a:visited {
     text-decoration: none;
     color: rgb(0, 149, 255);
-}
-
-button img {
-    width: 5%;
 }
 
 @media screen and (min-width: 500px) {
